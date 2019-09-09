@@ -1,0 +1,113 @@
+/* reset the default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* initialize the font-size of the page */
+html {
+  font-size: 16px;
+}
+
+/* add the image */
+/* image from Unsplash by https://unsplash.com/@perrygrone */
+header.team-header {
+  background-image: url("../assets/team.jpg");
+  background-size: cover;
+  font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+  header.team-header {
+    font-size: 3vw;
+  }
+}
+
+.team-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40% 0 20px;
+  color: #fff;
+}
+
+.team-title h1 {
+  font-weight: 100;
+}
+
+.team-title .team-social {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+@media (max-width: 550px) {
+  .team-title .team-social {
+    display: block;
+  }
+}
+
+.team-title .team-social .team-social-item {
+  margin: 0 3px;
+}
+
+/* the info */
+.team-description {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .team-description {
+    font-size: 1.5rem;
+  }
+}
+
+/* style the grid of team members */
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.team-grid-item {
+  text-align: center;
+}
+
+@media (min-width: 991px) {
+  .team-grid-item {
+    width: 18%;
+  }
+}
+
+.team-grid-item > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.team-grid .team-member-name {
+  color: #008000;
+  font-size: 1.5rem;
+}
+
+.team-grid .team-member-job {
+  font-size: 1.2rem;
+}
+
+.team-grid-item .team-member-social {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.team-grid-item .team-member-social .member-social {
+  margin: 0 2px;
+}
+
+.team-container {
+  margin: auto;
+  width: 87%;
+}
