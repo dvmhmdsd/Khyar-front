@@ -1,0 +1,111 @@
+/* reset the default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* initialize the font-size of the page */
+html {
+  font-size: 16px;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: #eee;
+}
+
+/* add the image */
+/* Photo by Evan Dennis on Unsplash https://unsplash.com/@evan__bray */
+header.faq-header {
+  background-image: url("../assets/faq.jpg");
+  background-size: cover;
+  font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+  header.faq-header {
+    font-size: 2.5vw;
+  }
+}
+
+.faq-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 40% 0 20px;
+  color: #fff;
+}
+
+/* make the title on the center on small screens */
+@media (max-width: 550px) {
+  .faq-title {
+    align-items: center;
+  }
+}
+
+.faq-title h1 {
+  font-weight: 100;
+}
+
+.faq-title .faq-social {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+@media (max-width: 550px) {
+  .faq-title .faq-social {
+    display: block;
+  }
+}
+
+.faq-title .faq-social .faq-social-item {
+  margin: 0 3px;
+}
+
+/* style the questions section */
+section.faq-questions {
+  margin-top: 50px;
+}
+
+.faq-questions .faq-qstn-item {
+  border: 1px solid #000;
+  background-color: #fff;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.faq-questions .faq-qstn-ans {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
+  margin-top: 5px;
+  height: 0;
+  padding-left: 20px;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+.faq-questions .faq-toggle-ans {
+  border-radius: 50%;
+  background-color: #58b83e;
+  color: #fff;
+  padding: 3px 4px 2px;
+  font-weight: bold;
+  border: none;
+  line-height: 3px;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  font-size: 17px;
+  outline: 0;
+  transition: transform 0.3s;
+}
+
+.faq-container {
+  margin: auto;
+  width: 87%;
+}
